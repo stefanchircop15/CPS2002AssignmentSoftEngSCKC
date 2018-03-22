@@ -3,11 +3,11 @@ package edu.uom.cps2002;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 public class CalculatorTests {
-
-    public Calculator calculator;
+    Calculator calculator;
 
     @Before
     public void setup() {
@@ -15,37 +15,52 @@ public class CalculatorTests {
     }
 
     @After
-    public void tearDown() {
+    public void takedown() {
         calculator = null;
     }
 
     @Test
-    public void testAddWithTwoPositiveNumbers() {
+    public void testAdd() {
         //Exercise
-        int result = calculator.add(5,2);
+        int answer = calculator.add(5,3);
 
-        //Assert
-        assertEquals(7, result);
+        //Verify
+        assertEquals(8, answer);
     }
 
     @Test
-    public void testAddWithTwoNegativeNumbers() {
+    public void testSubtract() {
         //Exercise
-        int result = calculator.add(-5,-2);
+        int answer = calculator.subtract(5, 3);
 
-        //Assert
-        assertEquals(-7, result);
+        //Verify
+        assertEquals(2, answer);
     }
 
     @Test
-    public void testAddWithANegativeAndPositiveNumber() {
+    public void testMultiply() {
         //Exercise
-        int result = calculator.add(5,-2);
+        int answer = calculator.multiply(5, 3);
 
-        //Assert
-        assertEquals(3, result);
+        //Verify
+        assertEquals(15, answer);
     }
 
+    @Test
+    public void testDivide() {
+        //Exercise
+        int answer = calculator.divide(5, 3);
 
+        //Verify
+        assertEquals(5/3, answer);
+    }
 
+    @Test
+    public void testDivide0() {
+        //Exercise
+        int answer = calculator.divide(5, 0);
+
+        //Verify
+        assertEquals(-999, answer);
+    }
 }
