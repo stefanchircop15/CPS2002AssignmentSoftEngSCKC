@@ -25,11 +25,8 @@ public class MapTest {
 
 
     @Test
-    public void mapNotTooSmall(){
-
-    }
     public void mapIsValid() {
-        char tileType = map.getTileType(2,3);
+        char tileType = map.getTileType(5,3);
         assertEquals('s', tileType);
     }
 }

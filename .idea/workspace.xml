@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbc7da39-4d77-4b22-ad58-353f61dfc1eb" name="Default" comment="" />
+    <list default="true" id="bbc7da39-4d77-4b22-ad58-353f61dfc1eb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java" afterPath="$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamePackage/Game.class" afterPath="$PROJECT_DIR$/target/classes/gamePackage/Game.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamePackage/Map.class" afterPath="$PROJECT_DIR$/target/classes/gamePackage/Map.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gamePackage/Player.class" afterPath="$PROJECT_DIR$/target/classes/gamePackage/Player.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/gamePackage/MapTest.class" afterPath="$PROJECT_DIR$/target/test-classes/gamePackage/MapTest.class" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,21 +22,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CPS2002Assignment$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1521740083957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/CPS2002Assignment$PositionTest_testSetters.coverage" NAME="PositionTest.testSetters Coverage Results" MODIFIED="1521742547399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gamePackage.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Software_Eng$MapTest_mapIsValid.coverage" NAME="MapTest.mapIsValid Coverage Results" MODIFIED="1521799086814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/CPS2002Assignment$gamePackage_in_CPS2002Assignment.coverage" NAME="gamePackage in CPS2002Assignment Coverage Results" MODIFIED="1521742299279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Software_Eng$PositionTest_testSetters.coverage" NAME="PositionTest.testSetters Coverage Results" MODIFIED="1521798717793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gamePackage.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Software_Eng$gamePackage_in_CPS2002Assignment.coverage" NAME="gamePackage in CPS2002Assignment Coverage Results" MODIFIED="1521799299984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gamePackage.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CPS2002Assignment$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1521740083957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -35,32 +57,79 @@
       <file leaf-file-name="Position.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Position.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding>
-                <element signature="e#122#123#0" expanded="true" />
-                <element signature="e#161#162#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#340#341#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PositionTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-13813">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PositionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/PositionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-85">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testClasstest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/testClasstest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,9 +137,59 @@
       <file leaf-file-name="Assert.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/org/junit/Assert.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="1785">
               <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1521726575559" expanded="false" signature="3:117" ph="/.../" />
+                <marker date="1521726575559" expanded="true" signature="184:207" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="288:311" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="366:389" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="471:494" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="550:573" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="629:652" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="684:707" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="823:846" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="936:959" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="1049:1072" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="1248:1271" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="1372:1395" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="1547:1570" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="1647:1670" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="1822:1845" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="1922:1945" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="2099:2122" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="2201:2224" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="2374:2397" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="2472:2495" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="2647:2670" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="2747:2770" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="2945:2968" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3032:3055" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3165:3188" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3254:3277" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3369:3392" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3462:3485" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3581:3604" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3688:3711" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3801:3824" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3888:3911" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="3998:4021" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="4082:4105" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="4219:4242" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="4330:4353" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="4472:4495" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="4588:4611" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="4672:4695" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="4811:4834" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="4952:4975" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="5090:5113" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="5119:5149" ph="/**...*/" />
+                <marker date="1521726575559" expanded="true" signature="5296:5319" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="5325:5355" ph="/**...*/" />
+                <marker date="1521726575559" expanded="true" signature="5476:5499" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="5582:5605" ph="{}" />
+                <marker date="1521726575559" expanded="true" signature="5713:5736" ph="{}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,10 +199,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -98,8 +220,15 @@
         <option value="$PROJECT_DIR$/src/test/java/gamePackage/testClasstest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gamePackage/Position.java" />
         <option value="$PROJECT_DIR$/src/test/java/gamePackage/PositionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -110,8 +239,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="814" />
-    <option name="height" value="907" />
+    <option name="width" value="1294" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -128,55 +257,64 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="CPS2002Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Software Eng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software Eng" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CPS2002Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Software Eng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software Eng" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Software Eng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software Eng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CPS2002Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Software Eng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software Eng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CPS2002Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Software Eng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software Eng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CPS2002Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Software Eng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software Eng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="gamePackage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CPS2002Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Software Eng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software Eng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CPS2002Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Software Eng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software Eng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CPS2002Assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPS2002Assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="Software Eng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Software Eng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -186,14 +324,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -215,7 +351,78 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PositionTest.testSetters">
+  <component name="RunManager" selected="JUnit.gamePackage in CPS2002Assignment">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="MapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gamePackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CPS2002Assignment" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="gamePackage" />
+      <option name="MAIN_CLASS_NAME" value="gamePackage.MapTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MapTest.mapIsValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gamePackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CPS2002Assignment" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="gamePackage" />
+      <option name="MAIN_CLASS_NAME" value="gamePackage.MapTest" />
+      <option name="METHOD_NAME" value="mapIsValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="PositionTest.testSetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -261,27 +468,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -302,11 +488,30 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+    <configuration name="gamePackage in CPS2002Assignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gamePackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CPS2002Assignment" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="gamePackage" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -342,45 +547,33 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="gamePackage in CPS2002Assignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="gamePackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="CPS2002Assignment" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="gamePackage" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.gamePackage in CPS2002Assignment" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.PositionTest.testSetters" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MapTest.mapIsValid" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MapTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PositionTest.testSetters" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.gamePackage in CPS2002Assignment" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.gamePackage in CPS2002Assignment" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MapTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MapTest.mapIsValid" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PositionTest.testSetters" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -389,120 +582,236 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521727692298</updated>
+      <workItem from="1521798530526" duration="801000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PositionTest_testSetters - 2018.03.22 at 19h 12m 04s.xml">
-      <configuration name="PositionTest.testSetters" configurationId="JUnit" />
+    <history-entry file="MapTest - 2018.03.23 at 10h 58m 20s.xml">
+      <configuration name="MapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PositionTest_testSetters - 2018.03.22 at 19h 13m 09s.xml">
-      <configuration name="PositionTest.testSetters" configurationId="JUnit" />
+    <history-entry file="MapTest_mapIsValid - 2018.03.23 at 10h 52m 48s.xml">
+      <configuration name="MapTest.mapIsValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PositionTest_testSetters - 2018.03.22 at 19h 13m 35s.xml">
-      <configuration name="PositionTest.testSetters" configurationId="JUnit" />
+    <history-entry file="MapTest_mapIsValid - 2018.03.23 at 10h 57m 49s.xml">
+      <configuration name="MapTest.mapIsValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PositionTest_testSetters - 2018.03.22 at 19h 14m 24s.xml">
-      <configuration name="PositionTest.testSetters" configurationId="JUnit" />
+    <history-entry file="MapTest_mapIsValid - 2018.03.23 at 10h 58m 00s.xml">
+      <configuration name="MapTest.mapIsValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PositionTest_testSetters - 2018.03.22 at 19h 14m 42s.xml">
-      <configuration name="PositionTest.testSetters" configurationId="JUnit" />
+    <history-entry file="MapTest_mapIsValid - 2018.03.23 at 10h 58m 07s.xml">
+      <configuration name="MapTest.mapIsValid" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PositionTest_testSetters - 2018.03.22 at 19h 15m 22s.xml">
-      <configuration name="PositionTest.testSetters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PositionTest_testSetters - 2018.03.22 at 19h 15m 48s.xml">
-      <configuration name="PositionTest.testSetters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.03.22 at 19h 06m 43s.xml">
+    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.03.23 at 10h 58m 49s.xml">
       <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.03.22 at 19h 07m 06s.xml">
+    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.03.23 at 11h 00m 37s.xml">
       <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.03.22 at 19h 11m 41s.xml">
+    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.03.23 at 11h 01m 13s.xml">
+      <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.03.23 at 11h 01m 28s.xml">
+      <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.03.23 at 11h 01m 40s.xml">
       <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="801000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32627645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.346875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32608697" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.9189189" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08108108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25778332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/testClasstest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/testClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Position.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Map.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="1785">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding>
+            <marker date="1521726575559" expanded="false" signature="3:117" ph="/.../" />
+            <marker date="1521726575559" expanded="true" signature="184:207" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="288:311" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="366:389" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="471:494" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="550:573" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="629:652" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="684:707" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="823:846" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="936:959" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1049:1072" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1248:1271" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1372:1395" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1547:1570" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1647:1670" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1822:1845" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1922:1945" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2099:2122" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2201:2224" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2374:2397" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2472:2495" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2647:2670" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2747:2770" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2945:2968" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3032:3055" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3165:3188" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3254:3277" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3369:3392" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3462:3485" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3581:3604" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3688:3711" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3801:3824" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3888:3911" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3998:4021" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4082:4105" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4219:4242" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4330:4353" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4472:4495" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4588:4611" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4672:4695" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4811:4834" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4952:4975" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5090:5113" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5119:5149" ph="/**...*/" />
+            <marker date="1521726575559" expanded="true" signature="5296:5319" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5325:5355" ph="/**...*/" />
+            <marker date="1521726575559" expanded="true" signature="5476:5499" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5582:5605" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5713:5736" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/testClass.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding>
+            <marker date="1521726575559" expanded="false" signature="3:117" ph="/.../" />
+            <marker date="1521726575559" expanded="true" signature="184:207" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="288:311" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="366:389" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="471:494" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="550:573" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="629:652" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="684:707" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="823:846" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="936:959" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1049:1072" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1248:1271" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1372:1395" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1547:1570" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1647:1670" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1822:1845" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="1922:1945" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2099:2122" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2201:2224" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2374:2397" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2472:2495" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2647:2670" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2747:2770" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="2945:2968" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3032:3055" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3165:3188" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3254:3277" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3369:3392" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3462:3485" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3581:3604" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3688:3711" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3801:3824" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3888:3911" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="3998:4021" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4082:4105" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4219:4242" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4330:4353" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4472:4495" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4588:4611" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4672:4695" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4811:4834" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="4952:4975" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5090:5113" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5119:5149" ph="/**...*/" />
+            <marker date="1521726575559" expanded="true" signature="5296:5319" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5325:5355" ph="/**...*/" />
+            <marker date="1521726575559" expanded="true" signature="5476:5499" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5582:5605" ph="{}" />
+            <marker date="1521726575559" expanded="true" signature="5713:5736" ph="{}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -515,40 +824,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Position.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.4/junit-4.4.jar!/org/junit/Assert.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13813">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/PositionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-85">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/testClasstest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
