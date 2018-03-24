@@ -1,7 +1,7 @@
 package gamePackage;
 
 //Position Class idea
-public class Position {
+class Position {
     private int x, y;
 
     public int[] getPosition() {
