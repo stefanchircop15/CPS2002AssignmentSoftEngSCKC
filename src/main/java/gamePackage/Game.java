@@ -31,6 +31,8 @@ public class Game {
                 if(!map.setMapSize(noOfPlayers, mapsize))
                     continue;
 
+                map.generate();
+
 
 
 
