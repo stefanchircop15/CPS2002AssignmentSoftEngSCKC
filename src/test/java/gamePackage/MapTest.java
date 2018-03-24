@@ -1,13 +1,10 @@
 package gamePackage;
 import Exceptions.LocationIsOutOfRange;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
+import static org.junit.Assume.assumeNoException;
+import static org.junit.Assume.assumeTrue;
 
 public class MapTest {
     private Map map;
@@ -26,6 +23,7 @@ public class MapTest {
         map = null;
     }
 
+    //Map size setter tests
     @Test
     public void setMapSizeInsufficientPlayers(){
         int noOfPlayers = 1;
@@ -84,6 +82,26 @@ public class MapTest {
 
     }
 
+    //Map size getter Test
+    @Test
+    public void getMapSizeAssumingSetterWorks() {
+        int noOfPlayers = 5;
+        int mapSize = 42;
+        assumeTrue(map.setMapSize(noOfPlayers, mapSize));
+        assertEquals(mapSize, map.getMapSize());
+    }
+
+    @Test
+    public void setMapSizeAssumingGetterWorks(){
+        int noOfPlayers = 8;
+        int mapSize = 32;
+        map.setMapSize(noOfPlayers,mapSize);
+        int result =map.getMapSize();
+        assertEquals(32, result);
+
+    }
+
+    //Map get tile type tests
     @Test
     public void getTileTypeLocationExceedsRange() {
         boolean thrown = false;
@@ -130,34 +148,98 @@ public class MapTest {
     }
 
     @Test
-    public void setTreasurePositionCorrect() {
+    public void getMapTileTypeReturnTest() {
+        char tileType = 'c';
+        char result = 'f';
+        int x = 15;
+        int y = 25;
+        int noOfPlayers = 7;
+        int mapSize = 30;
+        map.setMapSize(noOfPlayers,mapSize);
+        map.createEmptyMap();
+        try {
+            map.setTileType(x,y,tileType);
+        } catch (LocationIsOutOfRange e) {
+            assumeNoException(e);
+        }
+        try {
+            result = map.getTileType(x,y);
+        } catch (LocationIsOutOfRange e) {
+            assumeNoException(e);
+        }
+        assertEquals(tileType, result);
+    }
+
+    //Map set tile type tests
+    @Test
+    public void setTileTypeLocationExceedsRange() {
         boolean thrown = false;
-        map.setMapSize(8,48);
+        char tileType = 't';
+        map.setMapSize(4,9);
+        map.createEmptyMap();
+        int x = 0;
+        int y = 10;
+        try {
+            map.setTileType(x,y,tileType);
+        } catch (LocationIsOutOfRange e) {
+            thrown = true;
+        }
+        assertTrue("Index is out of bounds",thrown);
+    }
+
+    @Test
+    public void setTileTypeLocationNegative() {
+        boolean thrown = false;
+        char tileType = 't';
+        map.setMapSize(7,30);
+        map.createEmptyMap();
+        int x = -1;
+        int y = 25;
+        try {
+            map.setTileType(x,y,tileType);
+        } catch (LocationIsOutOfRange e) {
+            thrown = true;
+        }
+        assertTrue("Index is out of bounds",thrown);
+    }
+
+    @Test
+    public void setTileTypeLocationCorrect() {
+        boolean thrown = false;
+        char tileType = 't';
+        map.setMapSize(7,30);
         map.createEmptyMap();
         int x = 15;
         int y = 25;
         try {
-            map.getTileType(x,y);
+            map.setTileType(x,y,tileType);
         } catch (LocationIsOutOfRange e) {
             thrown = true;
         }
         assertFalse("Index is correct",thrown);
     }
 
-
+    //Create Map
     @Test
-    public void mapTestSetterTrue(){
-        map.setTileType(4,3,'a');
-        char result = map.map[4][3];
-        assertEquals('a', result);
+    public void createMap() {
+        int noOfPlayers = 8;
+        int mapSize = 15;
+        char [][] expected = new char[mapSize][mapSize];;
+        map.setMapSize(noOfPlayers,mapSize);
+        map.createEmptyMap();
+        char [][] result = map.map;
+        assertArrayEquals( expected, result );
     }
 
 
-    @Test
-    public void mapSizeTestGetter(){
-        map.size = 5;
-        assertEquals(map.getMapSize(), 5);
-    }
+
+
+
+
+
+
+
+
 
   /*  @Test
     public void treasureExists(){

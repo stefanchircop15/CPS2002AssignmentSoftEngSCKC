@@ -6,6 +6,7 @@ public class Player {
 
     void move(char direction) {
 
+
     }
 
     boolean setPosition(Position p) {
