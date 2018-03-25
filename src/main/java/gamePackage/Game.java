@@ -1,5 +1,9 @@
 package gamePackage;
 
+import Exceptions.LocationIsOutOfRange;
+import Exceptions.MapSizeNotSet;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class Game {
@@ -8,9 +12,9 @@ public class Game {
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
 
-        int truns, noOfPlayers = 0, mapsize=0;
+        int truns, noOfPlayers = 0, mapsize = 0;
 
-         map= new Map();
+        map = new Map();
 
         System.out.println("Welcome to the Treasure Hunt !");
 
@@ -28,25 +32,20 @@ public class Game {
                 input = sc.next();
                 mapsize = Integer.parseInt(input);
 
-                if(!map.setMapSize(noOfPlayers, mapsize))
+                if (!map.setMapSize(noOfPlayers, mapsize))
                     continue;
 
-                map.generate();
+                List listOfLocationLeadingToTreasure = map.generate();
+                map.fillRemainingEmptyLocations();
+                System.out.println("Program Finished");
 
 
-
-
-
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException | LocationIsOutOfRange | MapSizeNotSet e) {
                 System.out.println("Invalid input. Please enter an integer.");
-            /*}catch (InvalidNumberOfPlayersException e){
-                System.out.println(e);
-            }*/
-
             }
 
-
         }
+        return;
     }
 
 

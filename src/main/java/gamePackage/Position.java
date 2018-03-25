@@ -3,6 +3,13 @@ package gamePackage;
 //Position Class idea
 public class Position {
     private int x, y;
+    Position() {
+
+    }
+    Position(int newX , int newY) {
+        x =newX;
+        y = newY;
+    }
 
     public int[] getPosition() {
         return new int[] {x, y};

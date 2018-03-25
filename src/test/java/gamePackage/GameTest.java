@@ -26,18 +26,18 @@ public class GameTest {
 
 
     @Test
-    public void setNumberOfPlayersTrue() {
+    public void setNumberOfPlayersCorrect() {
         boolean result = setNumberOfPlayers(5);
         assertEquals(true, result);
     }
 
     @Test
-    public void setNumberOfPlayersFalse() {
+    public void setNumberOfPlayersIncorrectLessThanMin() {
         boolean result = setNumberOfPlayers(1);
         assertEquals(false, result);
     }
     @Test
-    public void setNumberOfPlayersFalse2() {
+    public void setNumberOfPlayersIncorrectMoreThanMax() {
         boolean result = setNumberOfPlayers(9);
         assertEquals(false, result);
     }
