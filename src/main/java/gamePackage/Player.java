@@ -4,7 +4,7 @@ class Player {
     private Position position;
 
     Player() {
-
+        position.setPosition(0, 0);
     }
 
     void move(char direction) {
