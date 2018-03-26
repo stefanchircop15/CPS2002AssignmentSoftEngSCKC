@@ -1,7 +1,11 @@
 package gamePackage;
 
 class Player {
-    Position position;
+    private Position position;
+
+    Player() {
+
+    }
 
     void move(char direction) {
         if(direction == 'U')
@@ -15,6 +19,9 @@ class Player {
     }
 
     boolean setPosition(Position p) {
+        if(Game.map.getMapSize() < p.getX() || Game.map.getMapSize() < p.getY())
+            return false;
+
         position.setPosition(p.getX(), p.getY());
         return true;
     }
