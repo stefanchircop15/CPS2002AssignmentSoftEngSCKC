@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc7da39-4d77-4b22-ad58-353f61dfc1eb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Exceptions/MapSizeNotSet.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Game.iml" afterPath="$PROJECT_DIR$/Game.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamePackage/Game.java" afterPath="$PROJECT_DIR$/src/main/java/gamePackage/Game.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamePackage/Map.java" afterPath="$PROJECT_DIR$/src/main/java/gamePackage/Map.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamePackage/Position.java" afterPath="$PROJECT_DIR$/src/main/java/gamePackage/Position.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gamePackage/GameTest.java" afterPath="$PROJECT_DIR$/src/test/java/gamePackage/GameTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java" afterPath="$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Exceptions/LocationIsOutOfRange.class" afterPath="$PROJECT_DIR$/target/classes/Exceptions/LocationIsOutOfRange.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gamePackage/Game.class" afterPath="$PROJECT_DIR$/target/classes/gamePackage/Game.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gamePackage/Map.class" afterPath="$PROJECT_DIR$/target/classes/gamePackage/Map.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gamePackage/Player.class" afterPath="$PROJECT_DIR$/target/classes/gamePackage/Player.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gamePackage/Position.class" afterPath="$PROJECT_DIR$/target/classes/gamePackage/Position.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gamePackage/GameTest.class" afterPath="$PROJECT_DIR$/target/test-classes/gamePackage/GameTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gamePackage/MapTest.class" afterPath="$PROJECT_DIR$/target/test-classes/gamePackage/MapTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/gamePackage/PositionTest.class" afterPath="$PROJECT_DIR$/target/test-classes/gamePackage/PositionTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,7 +35,7 @@
     <SUITE FILE_PATH="coverage/CPS2002Assignment$PositionTest_testSetters.coverage" NAME="PositionTest.testSetters Coverage Results" MODIFIED="1521742547399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Software_Eng$MapTest.coverage" NAME="MapTest Coverage Results" MODIFIED="1521999061618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Software_Eng$MapTest.coverage" NAME="MapTest Coverage Results" MODIFIED="1522055381936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Software_Eng$GameTest.coverage" NAME="GameTest Coverage Results" MODIFIED="1521810340419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -81,7 +65,7 @@
     <SUITE FILE_PATH="coverage/Software_Eng$MapTest_generateTreasureMapSizeSetMapNotCreated.coverage" NAME="MapTest.generateTreasureMapSizeSetMapNotCreated Coverage Results" MODIFIED="1521897990235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/Software_Eng$Game.coverage" NAME="Game Coverage Results" MODIFIED="1521993497603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Software_Eng$Game.coverage" NAME="Game Coverage Results" MODIFIED="1522055360329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
   </component>
@@ -102,10 +86,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Map.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="100">
+                <state relative-caret-position="17">
                   <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
                   <folding>
                     <element signature="method#Map#0;class#Map#0" expanded="false" />
@@ -161,11 +145,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+                <state relative-caret-position="170">
+                  <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1664#1665#0" expanded="true" />
@@ -188,8 +172,8 @@
           <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -212,7 +196,7 @@
           <file leaf-file-name="MapTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7701">
+                <state relative-caret-position="8313">
                   <caret line="497" column="37" lean-forward="false" selection-start-line="497" selection-start-column="29" selection-end-line="497" selection-end-column="37" />
                   <folding />
                 </state>
@@ -314,6 +298,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -386,9 +373,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Game">
+  <component name="RunManager" selected="JUnit.MapTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -643,11 +627,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Game" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.gamePackage in Game" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MapTest.isIdealLocationNextSucessfulMoveCheckCurrent" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MapTest.isIdealLocationNextSucessfulMoveCheckK" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MapTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MapTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Game" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.gamePackage in Game" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MapTest.isIdealLocationNextSucessfulMoveCheckCurrent" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MapTest.isIdealLocationNextSucessfulMoveCheckK" />
       </list>
     </recent_temporary>
   </component>
@@ -670,13 +654,14 @@
       <workItem from="1521969404944" duration="13379000" />
       <workItem from="1521984159933" duration="1146000" />
       <workItem from="1521993485484" duration="5899000" />
-      <workItem from="1521999408211" duration="600000" />
+      <workItem from="1521999408211" duration="695000" />
+      <workItem from="1522055313840" duration="86000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MapTest_isIdealLocationNextSucessfulMoveCheckK - 2018.03.25 at 19h 33m 31s.xml">
-      <configuration name="MapTest.isIdealLocationNextSucessfulMoveCheckK" configurationId="JUnit" />
+    <history-entry file="MapTest - 2018.03.26 at 11h 09m 43s.xml">
+      <configuration name="MapTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MapTest_isIdealLocationNextSucessfulMoveCheckK - 2018.03.25 at 19h 35m 08s.xml">
       <configuration name="MapTest.isIdealLocationNextSucessfulMoveCheckK" configurationId="JUnit" />
@@ -707,7 +692,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65012000" />
+    <option name="totallyTimeSpent" value="65193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
@@ -721,19 +706,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24021739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18600954" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24021739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18600954" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.082670905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08306836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3445652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3445652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1176,8 +1161,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1280,9 +1265,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1664#1665#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="17">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="method#Map#0;class#Map#0" expanded="false" />
@@ -1292,18 +1289,6 @@
             <element signature="method#getTileType#0;class#Map#0" expanded="false" />
             <element signature="method#setTileType#0;class#Map#0" expanded="false" />
             <element signature="method#returnLocationCheck#0;class#returnLocationCheck#0;class#Map#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-            <element signature="e#1688#1689#0" expanded="true" />
           </folding>
         </state>
       </provider>
