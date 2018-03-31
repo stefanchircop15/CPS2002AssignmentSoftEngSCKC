@@ -4,11 +4,32 @@ package gamePackage;
 class Position {
     private int x, y;
 
-    public int[] getPosition() {
+    Position() {
+        x = 0;
+        y = 0;
+    }
+
+    Position(int[] coords) {
+        if(coords.length != 2) {
+            x = 0;
+            y = 0;
+        }
+        else {
+            x = coords[0];
+            y = coords[1];
+        }
+    }
+
+    Position(int newX , int newY) {
+        x = newX;
+        y = newY;
+    }
+
+    public int[] getCoordinates() {
         return new int[] {x, y};
     }
 
-    public void setPosition(int a, int b) {
+    public void setCoordinates(int a, int b) {
         x = a;
         y = b;
     }
