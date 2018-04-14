@@ -8,12 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Map {
-    int size;
+    private int size;
     char[][] map;
     Position treasureLocation;
-    List listOfLocationLeadingToTreasure;
-
-
+    List<Position> listOfLocationLeadingToTreasure = new ArrayList<Position>();
 
     Map() {
         this.treasureLocation = new Position();
@@ -21,7 +19,7 @@ class Map {
         this.map = null;
     }
 
-    public boolean setMapSize(int noOfPlayers, int mapSize) {
+    boolean setMapSize(int noOfPlayers, int mapSize) {
         if (mapSize > 50 || mapSize < 5 || (mapSize < 8 && noOfPlayers > 4) || noOfPlayers < 2 || noOfPlayers > 8) {
             System.out.println("Invalid map Size ");
             return false;
@@ -30,18 +28,17 @@ class Map {
         return true;
     }
 
-    public int getMapSize() {
+    int getMapSize() {
         return this.size;
     }
 
-    public List generate() throws MapSizeNotSet, LocationIsOutOfRange {
+    List<Position> generate() throws MapSizeNotSet, LocationIsOutOfRange {
         //create sure paths
         Position previous = new Position();
         Position current;
         Position next;
         Position[] possibleLocations = new Position[4];
 
-        listOfLocationLeadingToTreasure = new ArrayList(1);
         int pathSize;
 
         createEmptyMap();
@@ -70,7 +67,7 @@ class Map {
         return listOfLocationLeadingToTreasure;
     }
 
-    public returnLocationCheck checkIfNextLocationIsIdeal (int j, Position next, Position previous, Position current){
+    returnLocationCheck checkIfNextLocationIsIdeal (int j, Position next, Position previous, Position current){
         if (next.getX() == previous.getX() && next.getY() == previous.getY()) {
             j--;
             return new returnLocationCheck(j, current,previous);
@@ -87,7 +84,7 @@ class Map {
         return new returnLocationCheck(j,next, current);
     }
 
-    public void fillRemainingEmptyLocations() throws LocationIsOutOfRange {
+    void fillRemainingEmptyLocations() throws LocationIsOutOfRange {
         char[] tileTypes = {'G', 'B'};
         for (int i = 0; i < getMapSize(); i++) {
             for (int j = 0; j < getMapSize(); j++) {
@@ -101,10 +98,10 @@ class Map {
         }
     }
 
-    public void generateTreasureLocation() throws MapSizeNotSet, LocationIsOutOfRange {
+    void generateTreasureLocation() throws MapSizeNotSet, LocationIsOutOfRange {
         if (getMapSize() == 0)
             throw new MapSizeNotSet("Map Size is not Set");
-        this.treasureLocation.setPosition((int) (Math.floor(Math.random() * (getMapSize()))), (int) (Math.floor(Math.random() * (getMapSize()))));
+        this.treasureLocation.setCoordinates((int) (Math.floor(Math.random() * (getMapSize()))), (int) (Math.floor(Math.random() * (getMapSize()))));
         try {
             setTileType(treasureLocation.getX(), treasureLocation.getY(), 'T');
         } catch (LocationIsOutOfRange e) {
@@ -112,19 +109,19 @@ class Map {
         }
     }
 
-    public char getTileType(int x, int y) throws LocationIsOutOfRange {
+    char getTileType(int x, int y) throws LocationIsOutOfRange {
         if (x < 0 || x > this.getMapSize() - 1 || y < 0 || y > this.getMapSize() - 1 || map == null)
             throw new LocationIsOutOfRange("Location is out of reach.");
         return this.map[x][y];
     }
 
-    public void setTileType(int x, int y, char input) throws LocationIsOutOfRange {
+    void setTileType(int x, int y, char input) throws LocationIsOutOfRange {
         if (x < 0 || x > this.getMapSize() - 1 || y < 0 || y > this.getMapSize() - 1 || map == null)
             throw new LocationIsOutOfRange("Location is out of reach.");
         this.map[x][y] = input;
     }
 
-    public void createEmptyMap() {
+    void createEmptyMap() {
         this.map = new char[size][size];
     }
 
