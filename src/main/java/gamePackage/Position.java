@@ -25,28 +25,30 @@ class Position {
         y = newY;
     }
 
-    public int[] getCoordinates() {
+    //Returns coordinates as an int array
+    int[] getCoordinates() {
         return new int[] {x, y};
     }
 
-    public void setCoordinates(int a, int b) {
+    //Sets x, y
+    void setCoordinates(int a, int b) {
         x = a;
         y = b;
     }
 
-    public int getX() {
+    int getX() {
         return x;
     }
 
-    public int getY() {
+    int getY() {
         return y;
     }
 
-    public void setX(int a) {
+    void setX(int a) {
         x = a;
     }
 
-    public void setY(int a) {
+    void setY(int a) {
         y = a;
     }
 }
