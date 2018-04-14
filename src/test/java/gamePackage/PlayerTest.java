@@ -16,12 +16,14 @@ public class PlayerTest {
 
     @Before
     public void setup() throws MapSizeNotSet, LocationIsOutOfRange {
+        //Setup to test Player - including game instance, map generation
         player = new Player();
         game = new Game();
         Game.map = new Map();
         Game.map.setMapSize(5, 40);
         try {
             Game.map.generate();
+            Game.map.fillRemainingEmptyLocations();
         } catch (MapSizeNotSet | LocationIsOutOfRange e) {
             throw e;
         }
@@ -31,64 +33,112 @@ public class PlayerTest {
     public void teardown() { player = null; }
 
     @Test
-    public void testMoveUniderictional() {
+    public void testMoveUnidirectional() {
+        //Test unidirectional movement, U, D, L, R
         int n = Game.map.getMapSize();
         Position p = new Position(player.getPosition().getX(), player.getPosition().getY());
         int[] expected = {0, 0};
 
-        //Go to upper limit and try overstep three times
+        //Try to go to upper limit and try overstep three times - unless there is water along the way
         for(int i = 0; i < n + 3; i++) {
             expected = player.getPosition().getCoordinates();
+            int x = player.getPosition().getX();
+            int y = player.getPosition().getY();
 
-            if(i < n - 1)
+            if(y < n - 1)
                 expected[1]++;
 
             player.move('U');
 
-            assertArrayEquals(player.getPosition().getCoordinates(), expected);
-            expected = player.getPosition().getCoordinates();
+            //If fell in water, assert starting position, else assert expected position
+            try {
+                if(x >= 0 && x < n && y + 1 >= 0 && y + 1 < n && Game.map.getTileType(x, y + 1) != 'B')
+                    assertArrayEquals(player.getPosition().getCoordinates(), expected);
+                else if(x >= 0 && x < n && y + 1 >= 0 && y + 1 < n && Game.map.getTileType(x, y + 1) == 'B')
+                    assertArrayEquals(player.getPosition().getCoordinates(), player.getStart().getCoordinates());
+            }
+            catch(LocationIsOutOfRange e) {
+                System.out.println(e.getMessage());
+                fail();
+            }
         }
 
-        //Go to right limit and try overstep three times
+        //Go to right limit and try overstep three times - unless there is water along the way
         for(int i = 0; i < n + 3; i++) {
             expected = player.getPosition().getCoordinates();
+            int x = player.getPosition().getX();
+            int y = player.getPosition().getY();
 
-            if(i < n - 1)
+            if(x < n - 1)
                 expected[0]++;
 
             player.move('R');
 
-            assertArrayEquals(player.getPosition().getCoordinates(), expected);
-            expected = player.getPosition().getCoordinates();
+            //If fell in water, assert starting position, else assert expected position
+            try {
+                if(x + 1 >= 0 && x + 1 < n && y >= 0 && y < n && Game.map.getTileType(x + 1, y) != 'B')
+                    assertArrayEquals(player.getPosition().getCoordinates(), expected);
+                else if(x + 1 >= 0 && x + 1 < n && y >= 0 && y < n && Game.map.getTileType(x + 1, y) == 'B')
+                    assertArrayEquals(player.getPosition().getCoordinates(), player.getStart().getCoordinates());
+            }
+            catch(LocationIsOutOfRange e) {
+                System.out.println(e.getMessage());
+                fail();
+            }
         }
 
-        //Go to left limit and try overstep three times
+        //Go to left limit and try overstep three times - unless there is water along the way
         for(int i = 0; i < n + 3; i++) {
             expected = player.getPosition().getCoordinates();
+            int x = player.getPosition().getX();
+            int y = player.getPosition().getY();
 
-            if(i < n - 1)
+            if(x > 0)
                 expected[0]--;
 
             player.move('L');
 
-            assertArrayEquals(player.getPosition().getCoordinates(), expected);
+            //If fell in water, assert starting position, else assert expected position
+            try {
+                if(x - 1 >= 0 && x - 1 < n && y >= 0 && y < n && Game.map.getTileType(x - 1, y) != 'B')
+                    assertArrayEquals(player.getPosition().getCoordinates(), expected);
+                else if(x - 1 >= 0 && x - 1 < n && y >= 0 && y < n && Game.map.getTileType(x - 1, y) == 'B')
+                    assertArrayEquals(player.getPosition().getCoordinates(), player.getStart().getCoordinates());
+            }
+            catch(LocationIsOutOfRange e) {
+                System.out.println(e.getMessage());
+                fail();
+            }
         }
 
-        //Go to bottom limit and try overstep three times
+        //Go to bottom limit and try overstep three times - unless there is water along the way
         for(int i = 0; i < n + 3; i++) {
             expected = player.getPosition().getCoordinates();
+            int x = player.getPosition().getX();
+            int y = player.getPosition().getY();
 
-            if(i < n - 1)
+            if(y > 0)
                 expected[1]--;
 
             player.move('D');
 
-            assertArrayEquals(player.getPosition().getCoordinates(), expected);
+            //If fell in water, assert starting position, else assert expected position
+            try {
+                if(x >= 0 && x < n && y - 1 >= 0 && y - 1 < n && Game.map.getTileType(x, y - 1) != 'B')
+                    assertArrayEquals(player.getPosition().getCoordinates(), expected);
+                else if(x >= 0 && x < n && y - 1 >= 0 && y - 1 < n && Game.map.getTileType(x, y - 1) == 'B')
+                    assertArrayEquals(player.getPosition().getCoordinates(), player.getStart().getCoordinates());
+            }
+            catch(LocationIsOutOfRange e) {
+                System.out.println(e.getMessage());
+                fail();
+            }
         }
     }
 
     @Test
     public void testSetPosition() {
+        //Test setPosition constraints
         int n = Game.map.getMapSize();
         int[] expected = {0, 0};
 
@@ -121,11 +171,12 @@ public class PlayerTest {
             player.setPosition(testTile);
 
             assertFalse(Arrays.equals(testTile.getCoordinates(), player.getPosition().getCoordinates()));
+            assertTrue(Arrays.equals(player.getPosition().getCoordinates(), player.getStart().getCoordinates()));
 
             Game.map.setTileType(0, n - 1, 'T');
             player.setPosition(testTile);
 
-            assertFalse(Arrays.equals(testTile.getCoordinates(), player.getPosition().getCoordinates()));
+            assertTrue(Arrays.equals(testTile.getCoordinates(), player.getPosition().getCoordinates()));
         }
         catch(LocationIsOutOfRange e) {
             System.out.println(e.getMessage());
