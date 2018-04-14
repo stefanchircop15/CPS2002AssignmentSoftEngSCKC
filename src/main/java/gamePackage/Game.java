@@ -21,19 +21,23 @@ public class Game {
     private static Random ran = new Random(System.currentTimeMillis());
     private static File[] htmlFiles;
 
+    //Start the game
     public static void main(String [] args) {
         System.out.println("Welcome to the Treasure Hunt !");
 
         startGame();
     }
 
+    //Generates a new map to play on, players, etc.
     private static void startGame() {
         Scanner sc = new Scanner(System.in);
 
         map = new Map();
 
+        //While map not generated
         while (map.getMapSize() == 0) {
             System.out.println("Please enter the amount of players \n----Players allowed: 2-8----");
+            //Ask user for no. of players and map size, and place the players on the map in valid positions
             try {
                 String input = sc.nextLine();
                 int noOfPlayers = Integer.parseInt(input);
@@ -52,12 +56,15 @@ public class Game {
                 if (!map.setMapSize(noOfPlayers, mapsize))
                     continue;
 
+                //Get list of green tiles that lead to treasure and generate rest of the map
                 List<Position> listOfLocationLeadingToTreasure = map.generate();
                 map.fillRemainingEmptyLocations();
 
+                //Place players randomly on the valid green tiles - players could share position
                 for(int i = 0; i < noOfPlayers; i++) {
                     int randomIndex = ran.nextInt(listOfLocationLeadingToTreasure.size());
-                    players[i].setPosition(listOfLocationLeadingToTreasure.get(randomIndex));
+                    players[i].setStart(listOfLocationLeadingToTreasure.get(randomIndex));
+                    System.out.println(map.getTileType(players[i].getPosition().getX(), players[i].getPosition().getY()));
                 }
             }
             catch (NumberFormatException | LocationIsOutOfRange | MapSizeNotSet e) {
@@ -65,6 +72,7 @@ public class Game {
             }
         }
 
+        //Keep track of winners
         int[] winners = new int[players.length];
 
         boolean winner = false;
@@ -74,6 +82,7 @@ public class Game {
             //Generate HTML files for current state of the game
             try {
                 generateHTMLFiles();
+                System.out.println();
             } catch (HTMLGenerationFailure e) {
                 System.out.println(e.getMessage());
                 System.out.println("Since HTML maps failed to generate, the program shall now end.");
@@ -83,7 +92,15 @@ public class Game {
             //For each player in the game - ask for move and check if player has won
             for(int i = 0; i < players.length; i++) {
                 System.out.println("Player " + i + " state your move :");
-                char m = sc.nextLine().toCharArray()[0];
+                String s = sc.nextLine();
+                char m;
+
+                while(true) {
+                    if(!s.equals("\\n")) {
+                        m = s.toCharArray()[0];
+                        break;
+                    }
+                }
 
                 //While move is invalid
                 while(!players[i].move(m)) {
@@ -101,6 +118,17 @@ public class Game {
             turns++;
         }
 
+        //Generate final maps for each player
+        try {
+            generateHTMLFiles();
+            System.out.println();
+        } catch (HTMLGenerationFailure e) {
+            System.out.println(e.getMessage());
+            System.out.println("Since HTML maps failed to generate, the program shall now end.");
+            System.exit(1);
+        }
+
+        //Declare game winner/s - since multiple players may stumble on the treasure at the same turn
         System.out.println("These are the winners!");
         for(int i = 0; i < winners.length; i++) {
             if(winners[i] == 1) {
@@ -108,10 +136,17 @@ public class Game {
             }
         }
 
-        deleteHTMLFiles();
+        //Display amount of turns taken
+        System.out.println("Turns taken : " + turns);
+        System.out.println("Press Enter to finish the game.");
+
+        //Clean up html files and exit
+        sc.nextLine();
+        deleteHTMLFiles(htmlFiles);
         System.exit(0);
     }
 
+    //Initialises players
     static boolean setNumberOfPlayers (int n) {
         if (n > 1 && n < 9) {
             players = new Player[n];
@@ -126,15 +161,17 @@ public class Game {
         return false;
     }
 
+    //Generates html map files
     private static void generateHTMLFiles() throws HTMLGenerationFailure {
+        //Exception to be thrown
         HTMLGenerationFailure exc = new HTMLGenerationFailure("HTML File Generation failure");
-        String green = "003300";
-        String blue = "003366";
+        String green = "33cc33";
+        String blue = "33ccff";
         String yellow = "ffff00";
-        String tileCol = "8f8970";
+        String tileCol = "808080";
 
         String playerImg = "";
-        String absoulutePathImages = "";
+        String absoulutePathImages;
 
         htmlFiles = new File[players.length];
 
@@ -142,35 +179,40 @@ public class Game {
         for(int i = 0; i < players.length; i++)
             htmlFiles[i] = new File("maps/map_player_" + i + ".html");
 
-        absoulutePathImages = htmlFiles[0].getParentFile().getAbsolutePath().toString() + "\\../images";
-        //Generate tables
+        //Path to images folder whwere player.png is
+        absoulutePathImages = htmlFiles[0].getParentFile().getAbsolutePath() + "\\../images";
+
+        //Generate table for every player
         for(int i = 0; i < players.length; i++) {
+            //Preset styling
             StringBuilder html = new StringBuilder(
                     "<!DOCTYPE html>\n" +
                     "<html>\n" +
-                    "<body>\n" +
+                    "<body bgcolor=#0099ff>\n" +
                     "\n" +
                     "<style type=\"text/css\">\n" +
                     "table {\n" +
                     "\theight: " + map.getMapSize() * 100 + "px;\n" +
                     "\twidth: " + map.getMapSize() * 100 + "px;\n" +
-                    "\tmargin: 0; padding: 0;\n" +
+                    "\tmargin: 1; padding: 0;\n" +
                     "\tborder-collapse: collapse;\n" +
                     "}\n" +
                     "td { \n" +
-                    "\tborder: 1px solid #CC3;\n" +
+                    "\tborder: 2px solid #000000;\n" +
                     "\tborder-spacing: 0;\n" +
                     "\theight: 100px;\n" +
                     "\twidth: 100px;\n" +
-                    "\tmargin: 0; padding: 0;\n" +
+                    "\tmargin: 0; padding: 0.5;\n" +
                     "}\n" +
                     "</style>" +
-                    "<h2>" + "Player " + i + " Map" + "</h2>\n" +
+                    "<h2 align=center style=\"color:#ffffff\">" + "Player " + i + " Map" + "</h2>\n" +
                     "\n" +
-                    "<table align=\"center\">\n");
+                    "<table align=\"center\">\n"
+            );
 
             StringBuilder rows = new StringBuilder();
 
+            //Identify current tile color for map
             try {
                 int[] currentTile = {0, 0};
                 //For each row starting from the top row
@@ -186,7 +228,7 @@ public class Game {
                         for(Position visited : players[i].getVisited()) {
                             //If a visited tile matches the current tile to be generated, then it's true type can be revealed (player has seen this tile)
                             if(Arrays.equals(visited.getCoordinates(), currentTile)) {
-                                switch (map.getTileType(j, k)) {
+                                switch (map.getTileType(k, j)) {
                                     case 'G':
                                         tileCol = green;
                                         break;
@@ -203,11 +245,12 @@ public class Game {
 
                         //Append generated column to current row
                         if(Arrays.equals(players[i].getPosition().getCoordinates(), currentTile))
-                            playerImg = "<img style=\"height:100px;width:100px;opacity:0.4;filter:alpha(opacity=40);vertical-align:bottom;\" src=\"" + absoulutePathImages + "/player.png\">";
+                            playerImg = "<img style=\"height:100px;width:100px;vertical-align:bottom;\" src=\"" + absoulutePathImages + "/player.png\">";
 
-                        rows.append("<td style=\"height:100px\" style=\"width:100px\" bgcolor=" + tileCol + ">" + playerImg + "</td>");
+                        //Add row to table
+                        rows.append("<td style=\"height:100px\" style=\"width:100px\" bgcolor=").append(tileCol).append(">").append(playerImg).append("</td>");
                         playerImg = "";
-                        tileCol = "8f8970";
+                        tileCol = "808080";
                     }
 
                     rows.append("</tr>\n");
@@ -219,13 +262,10 @@ public class Game {
                 throw exc;
             }
 
-            html.append(
-                    rows.toString() +
-                    "</table>\n" +
-                    "\n" +
-                    "</body>\n" +
-                    "</html>");
+            //Append to html page the current state of the table
+            html.append(rows.toString()).append("</table>\n").append("\n").append("</body>\n").append("</html>");
 
+            //Write the html text into a file
             try {
                 BufferedWriter writer = new BufferedWriter(new FileWriter("maps/map_player_" + i + ".html"));
                 writer.write(html.toString());
@@ -240,8 +280,9 @@ public class Game {
         }
     }
 
-    private static void deleteHTMLFiles() {
-        for(File f : htmlFiles) {
+    //Delete generating html files
+    static void deleteHTMLFiles(File[] files) {
+        for(File f : files) {
             if(!f.delete()) {
                 System.out.println("On cleaning HTML files, file " + f.getName() + "failed to delete.");
             }
