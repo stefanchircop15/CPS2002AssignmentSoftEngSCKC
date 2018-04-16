@@ -34,6 +34,10 @@ public class Game {
 
     //Generates a new map to play on, players, etc.
     private static void startGame() {
+        File mapsDir = new File("maps");
+        if (!mapsDir.exists())
+            mapsDir.mkdir();
+
         map = new Map();
 
         //initialise map
