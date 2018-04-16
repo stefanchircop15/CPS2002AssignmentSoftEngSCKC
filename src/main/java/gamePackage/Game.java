@@ -300,7 +300,7 @@ public class Game {
         try {
             generateHTMLFiles();
             System.out.println();
-        } catch (HTMLGenerationFailure e) {
+        } catch(HTMLGenerationFailure e) {
             System.out.println(e.getMessage());
             System.out.println("Since HTML maps failed to generate, the program shall now end.");
             return 1;
