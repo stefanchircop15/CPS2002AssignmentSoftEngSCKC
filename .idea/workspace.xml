@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbc7da39-4d77-4b22-ad58-353f61dfc1eb" name="Default" comment="" />
+    <list default="true" id="bbc7da39-4d77-4b22-ad58-353f61dfc1eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,10 +14,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CPS2002Assignment$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1521740083957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CPS2002AssignmentSoftEngSCKC_master$MapTest.coverage" NAME="MapTest Coverage Results" MODIFIED="1523886017857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gamePackage.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Software_Eng$Game.coverage" NAME="Game Coverage Results" MODIFIED="1521813108810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CPS2002AssignmentSoftEngSCKC_master$gamePackage_in_CPS2002Assignment.coverage" NAME="gamePackage in CPS2002Assignment Coverage Results" MODIFIED="1523886415794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gamePackage.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/CPS2002Assignment$gamePackage_in_CPS2002Assignment.coverage" NAME="gamePackage in CPS2002Assignment Coverage Results" MODIFIED="1521742299279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/CPS2002Assignment$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1521740083957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Software_Eng$MapTest.coverage" NAME="MapTest Coverage Results" MODIFIED="1521835379119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
@@ -23,14 +32,10 @@
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Software_Eng$CPS2002Assignment.coverage" NAME="CPS2002Assignment Coverage Results" MODIFIED="1521804448385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/CPS2002AssignmentSoftEngSCKC_master$MapTest.coverage" NAME="MapTest Coverage Results" MODIFIED="1523886017857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/CPS2002_Assignment$gamePackage_in_CPS2002Assignment.coverage" NAME="gamePackage in CPS2002Assignment Coverage Results" MODIFIED="1523887158490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Software_Eng$PositionTest_testSetters.coverage" NAME="PositionTest.testSetters Coverage Results" MODIFIED="1521798717793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>gamePackage.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/Software_Eng$Game.coverage" NAME="Game Coverage Results" MODIFIED="1521813108810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/CPS2002AssignmentSoftEngSCKC_master$gamePackage_in_CPS2002Assignment.coverage" NAME="gamePackage in CPS2002Assignment Coverage Results" MODIFIED="1523886415794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/CPS2002Assignment$PositionTest_testSetters.coverage" NAME="PositionTest.testSetters Coverage Results" MODIFIED="1521742547399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -65,7 +70,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="34">
                   <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-                  <folding />
+                  <folding>
+                    <marker date="1523853450000" expanded="true" signature="2087:2095" ph="{...}" />
+                    <marker date="1523853450000" expanded="true" signature="2192:2249" ph="{...}" />
+                    <marker date="1523853450000" expanded="false" signature="2309:2320" ph=" { " />
+                    <marker date="1523853450000" expanded="false" signature="2335:2341" ph=" }" />
+                    <marker date="1523853450000" expanded="false" signature="2400:2411" ph=" { " />
+                    <marker date="1523853450000" expanded="false" signature="2427:2433" ph=" }" />
+                    <marker date="1523853450000" expanded="false" signature="2490:2501" ph=" { " />
+                    <marker date="1523853450000" expanded="false" signature="2514:2520" ph=" }" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -73,11 +87,16 @@
           <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Map.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="651">
+                <state relative-caret-position="1156">
                   <caret line="70" column="34" lean-forward="false" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#298#308#0" expanded="true" />
+                    <marker date="1523853450000" expanded="false" signature="788:794" ph=" }" />
+                    <marker date="1523853450000" expanded="false" signature="4592:4598" ph=" }" />
+                    <marker date="1523853450000" expanded="true" signature="4902:4913" ph="{...}" />
+                    <marker date="1523853450000" expanded="true" signature="4943:4960" ph="{...}" />
+                    <marker date="1523853450000" expanded="true" signature="4991:5009" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -86,8 +105,8 @@
           <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+                <state relative-caret-position="442">
+                  <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -96,11 +115,9 @@
           <file leaf-file-name="GameTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/GameTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="827">
-                  <caret line="265" column="44" lean-forward="true" selection-start-line="265" selection-start-column="44" selection-end-line="265" selection-end-column="44" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="918">
+                  <caret line="310" column="1" lean-forward="false" selection-start-line="310" selection-start-column="1" selection-end-line="310" selection-end-column="1" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -131,10 +148,10 @@
                 <state relative-caret-position="85">
                   <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
                   <folding>
-                    <marker date="1523886439130" expanded="true" signature="52739:52756" ph="..." />
-                    <marker date="1523886439130" expanded="true" signature="52739:52774" ph="..." />
-                    <marker date="1523886439130" expanded="true" signature="52739:52787" ph="..." />
-                    <marker date="1523886439130" expanded="true" signature="52739:52802" ph="..." />
+                    <marker date="1523887158251" expanded="true" signature="62169:62211" ph="..." />
+                    <marker date="1523887158251" expanded="true" signature="62169:62229" ph="..." />
+                    <marker date="1523887158251" expanded="true" signature="62169:62242" ph="..." />
+                    <marker date="1523887158251" expanded="true" signature="62169:62257" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -187,7 +204,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -246,9 +263,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,7 +330,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -576,13 +593,11 @@
       <updated>1521727692298</updated>
       <workItem from="1521798530526" duration="23271000" />
       <workItem from="1523886003865" duration="445000" />
+      <workItem from="1523887146541" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.04.16 at 15h 43m 52s.xml">
-      <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="gamePackage_in_CPS2002Assignment - 2018.04.16 at 15h 43m 58s.xml">
       <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
     </history-entry>
@@ -610,13 +625,15 @@
     <history-entry file="gamePackage_in_CPS2002Assignment - 2018.04.16 at 15h 46m 57s.xml">
       <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.04.16 at 15h 59m 20s.xml">
+      <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23716000" />
+    <option name="totallyTimeSpent" value="23735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -626,9 +643,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49527806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12559524" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49527806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12559524" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -638,8 +655,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47608694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47608694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -685,7 +702,118 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <marker date="1523853450000" expanded="true" signature="2087:2095" ph="{...}" />
+            <marker date="1523853450000" expanded="true" signature="2192:2249" ph="{...}" />
+            <marker date="1523853450000" expanded="false" signature="2309:2320" ph=" { " />
+            <marker date="1523853450000" expanded="false" signature="2335:2341" ph=" }" />
+            <marker date="1523853450000" expanded="false" signature="2400:2411" ph=" { " />
+            <marker date="1523853450000" expanded="false" signature="2427:2433" ph=" }" />
+            <marker date="1523853450000" expanded="false" signature="2490:2501" ph=" { " />
+            <marker date="1523853450000" expanded="false" signature="2514:2520" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="70" column="34" lean-forward="false" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#298#308#0" expanded="true" />
+            <marker date="1523853450000" expanded="false" signature="788:794" ph=" }" />
+            <marker date="1523853450000" expanded="false" signature="4592:4598" ph=" }" />
+            <marker date="1523853450000" expanded="true" signature="4902:4913" ph="{...}" />
+            <marker date="1523853450000" expanded="true" signature="4943:4960" ph="{...}" />
+            <marker date="1523853450000" expanded="true" signature="4991:5009" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Game.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <marker date="1523887158251" expanded="true" signature="62169:62211" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62229" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62242" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62257" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/PositionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="156" column="19" lean-forward="false" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exceptions/LocationIsOutOfRange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <marker date="1523853450000" expanded="true" signature="2087:2095" ph="{...}" />
+            <marker date="1523853450000" expanded="true" signature="2192:2249" ph="{...}" />
+            <marker date="1523853450000" expanded="false" signature="2309:2320" ph=" { " />
+            <marker date="1523853450000" expanded="false" signature="2335:2341" ph=" }" />
+            <marker date="1523853450000" expanded="false" signature="2400:2411" ph=" { " />
+            <marker date="1523853450000" expanded="false" signature="2427:2433" ph=" }" />
+            <marker date="1523853450000" expanded="false" signature="2490:2501" ph=" { " />
+            <marker date="1523853450000" expanded="false" signature="2514:2520" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -701,9 +829,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -720,10 +846,10 @@
         <state relative-caret-position="255">
           <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
-            <marker date="1523886439130" expanded="true" signature="52739:52756" ph="..." />
-            <marker date="1523886439130" expanded="true" signature="52739:52774" ph="..." />
-            <marker date="1523886439130" expanded="true" signature="52739:52787" ph="..." />
-            <marker date="1523886439130" expanded="true" signature="52739:52802" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62211" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62229" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62242" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62257" ph="..." />
           </folding>
         </state>
       </provider>
@@ -743,6 +869,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#298#308#0" expanded="true" />
+            <marker date="1523853450000" expanded="false" signature="788:794" ph=" }" />
+            <marker date="1523853450000" expanded="false" signature="4592:4598" ph=" }" />
+            <marker date="1523853450000" expanded="true" signature="4902:4913" ph="{...}" />
+            <marker date="1523853450000" expanded="true" signature="4943:4960" ph="{...}" />
+            <marker date="1523853450000" expanded="true" signature="4991:5009" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -806,10 +937,10 @@
         <state relative-caret-position="85">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
-            <marker date="1523886439130" expanded="true" signature="52739:52756" ph="..." />
-            <marker date="1523886439130" expanded="true" signature="52739:52774" ph="..." />
-            <marker date="1523886439130" expanded="true" signature="52739:52787" ph="..." />
-            <marker date="1523886439130" expanded="true" signature="52739:52802" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62211" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62229" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62242" ph="..." />
+            <marker date="1523887158251" expanded="true" signature="62169:62257" ph="..." />
           </folding>
         </state>
       </provider>
@@ -838,7 +969,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
+          <folding>
+            <marker date="1523853450000" expanded="true" signature="2087:2095" ph="{...}" />
+            <marker date="1523853450000" expanded="true" signature="2192:2249" ph="{...}" />
+            <marker date="1523853450000" expanded="false" signature="2309:2320" ph=" { " />
+            <marker date="1523853450000" expanded="false" signature="2335:2341" ph=" }" />
+            <marker date="1523853450000" expanded="false" signature="2400:2411" ph=" { " />
+            <marker date="1523853450000" expanded="false" signature="2427:2433" ph=" }" />
+            <marker date="1523853450000" expanded="false" signature="2490:2501" ph=" { " />
+            <marker date="1523853450000" expanded="false" signature="2514:2520" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -861,37 +1001,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
+        <state relative-caret-position="1156">
           <caret line="70" column="34" lean-forward="false" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#298#308#0" expanded="true" />
+            <marker date="1523853450000" expanded="false" signature="788:794" ph=" }" />
+            <marker date="1523853450000" expanded="false" signature="4592:4598" ph=" }" />
+            <marker date="1523853450000" expanded="true" signature="4902:4913" ph="{...}" />
+            <marker date="1523853450000" expanded="true" signature="4943:4960" ph="{...}" />
+            <marker date="1523853450000" expanded="true" signature="4991:5009" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/MapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="156" column="19" lean-forward="false" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+        <state relative-caret-position="17">
+          <caret line="87" column="26" lean-forward="false" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/gamePackage/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="265" column="44" lean-forward="true" selection-start-line="265" selection-start-column="44" selection-end-line="265" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="918">
+          <caret line="310" column="1" lean-forward="false" selection-start-line="310" selection-start-column="1" selection-end-line="310" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gamePackage/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        <state relative-caret-position="442">
+          <caret line="100" column="5" lean-forward="false" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
           <folding />
         </state>
       </provider>
