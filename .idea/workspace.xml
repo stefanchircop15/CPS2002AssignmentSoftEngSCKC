@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbc7da39-4d77-4b22-ad58-353f61dfc1eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="bbc7da39-4d77-4b22-ad58-353f61dfc1eb" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +30,7 @@
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Software_Eng$CPS2002Assignment.coverage" NAME="CPS2002Assignment Coverage Results" MODIFIED="1521804448385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/CPS2002_Assignment$gamePackage_in_CPS2002Assignment.coverage" NAME="gamePackage in CPS2002Assignment Coverage Results" MODIFIED="1523887158490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/CPS2002_Assignment$gamePackage_in_CPS2002Assignment.coverage" NAME="gamePackage in CPS2002Assignment Coverage Results" MODIFIED="1523887233172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>gamePackage.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Software_Eng$PositionTest_testSetters.coverage" NAME="PositionTest.testSetters Coverage Results" MODIFIED="1521798717793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -145,13 +143,13 @@
           <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
                   <folding>
-                    <marker date="1523887158251" expanded="true" signature="62169:62211" ph="..." />
-                    <marker date="1523887158251" expanded="true" signature="62169:62229" ph="..." />
-                    <marker date="1523887158251" expanded="true" signature="62169:62242" ph="..." />
-                    <marker date="1523887158251" expanded="true" signature="62169:62257" ph="..." />
+                    <marker date="1523887232937" expanded="true" signature="62683:62725" ph="..." />
+                    <marker date="1523887232937" expanded="true" signature="62683:62743" ph="..." />
+                    <marker date="1523887232937" expanded="true" signature="62683:62756" ph="..." />
+                    <marker date="1523887232937" expanded="true" signature="62683:62771" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -593,14 +591,11 @@
       <updated>1521727692298</updated>
       <workItem from="1521798530526" duration="23271000" />
       <workItem from="1523886003865" duration="445000" />
-      <workItem from="1523887146541" duration="19000" />
+      <workItem from="1523887146541" duration="91000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.04.16 at 15h 43m 58s.xml">
-      <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="gamePackage_in_CPS2002Assignment - 2018.04.16 at 15h 44m 02s.xml">
       <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
     </history-entry>
@@ -628,9 +623,12 @@
     <history-entry file="gamePackage_in_CPS2002Assignment - 2018.04.16 at 15h 59m 20s.xml">
       <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="gamePackage_in_CPS2002Assignment - 2018.04.16 at 16h 00m 34s.xml">
+      <configuration name="gamePackage in CPS2002Assignment" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23735000" />
+    <option name="totallyTimeSpent" value="23807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1066" extended-state="6" />
@@ -752,10 +750,10 @@
         <state relative-caret-position="85">
           <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
-            <marker date="1523887158251" expanded="true" signature="62169:62211" ph="..." />
-            <marker date="1523887158251" expanded="true" signature="62169:62229" ph="..." />
-            <marker date="1523887158251" expanded="true" signature="62169:62242" ph="..." />
-            <marker date="1523887158251" expanded="true" signature="62169:62257" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62725" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62743" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62756" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -846,10 +844,10 @@
         <state relative-caret-position="255">
           <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
-            <marker date="1523887158251" expanded="true" signature="62169:62211" ph="..." />
-            <marker date="1523887158251" expanded="true" signature="62169:62229" ph="..." />
-            <marker date="1523887158251" expanded="true" signature="62169:62242" ph="..." />
-            <marker date="1523887158251" expanded="true" signature="62169:62257" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62725" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62743" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62756" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -934,13 +932,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding>
-            <marker date="1523887158251" expanded="true" signature="62169:62211" ph="..." />
-            <marker date="1523887158251" expanded="true" signature="62169:62229" ph="..." />
-            <marker date="1523887158251" expanded="true" signature="62169:62242" ph="..." />
-            <marker date="1523887158251" expanded="true" signature="62169:62257" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62725" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62743" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62756" ph="..." />
+            <marker date="1523887232937" expanded="true" signature="62683:62771" ph="..." />
           </folding>
         </state>
       </provider>
