@@ -21,7 +21,7 @@ class Map {
 
     boolean setMapSize(int noOfPlayers, int mapSize) {
         if (mapSize > 50 || mapSize < 5 || (mapSize < 8 && noOfPlayers > 4) || noOfPlayers < 2 || noOfPlayers > 8) {
-            System.out.println("Invalid map Size ");
+            System.out.println("Invalid map Size");
             return false;
         }
         size = mapSize;
