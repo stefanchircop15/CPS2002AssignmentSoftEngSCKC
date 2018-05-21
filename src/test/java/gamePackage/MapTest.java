@@ -3,7 +3,9 @@ import Exceptions.LocationIsOutOfRange;
 import Exceptions.MapSizeNotSet;
 import org.junit.*;
 
+import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import static org.junit.Assert.*;
 import static org.junit.Assume.assumeNoException;
@@ -14,21 +16,42 @@ public class MapTest {
 
     @Before
     public void setUp() {
-
-        // set up class for testing
-        map = new Map();
+        Map.tearDownMap();
+        map = null;
+        map = Map.getMapInstance();
+        File mapsDir = new File("maps");
+        if (!mapsDir.exists())
+            mapsDir.mkdir();
     }
+
 
     @After
     public void tearDown() {
-
         // clean up class
+        Map.tearDownMap();
         map = null;
+    }
+
+    @Test
+    public void testSingletonUniqueness() {
+        Map newInstance1 = Map.getMapInstance();
+        Map newInstance2 = Map.getMapInstance();
+        assertEquals(System.identityHashCode(newInstance1), System.identityHashCode(newInstance2));
+    }
+
+    @Test
+    public void testSingletonOverwriteTest() {
+        Map newInstance1 = Map.getMapInstance();
+        Map newInstance2 = Map.getMapInstance();
+        newInstance2.setMapSize(2, 8);
+        newInstance1.setMapSize(4, 5);
+        assertEquals(newInstance1.getMapSize(), newInstance2.getMapSize());
     }
 
     //Map size setter tests
     @Test
     public void setMapSizeInsufficientPlayers(){
+        map = Map.getMapInstance();
         int noOfPlayers = 1;
         int mapSize = 5;
         boolean result = map.setMapSize(noOfPlayers,mapSize);
@@ -242,7 +265,7 @@ public class MapTest {
     public void createMap() {
         int noOfPlayers = 8;
         int mapSize = 15;
-        char [][] expected = new char[mapSize][mapSize];;
+        char [][] expected = new char[mapSize][mapSize];
         map.setMapSize(noOfPlayers,mapSize);
         map.createEmptyMap();
         char [][] result = map.map;
@@ -305,7 +328,7 @@ public class MapTest {
         map.setMapSize(noOfPlayers,mapSize);
         map.createEmptyMap();
         try {
-            map.fillRemainingEmptyLocations();
+            new MapDirector(1).buildMap();
         } catch (LocationIsOutOfRange e) {
             assumeNoException(e);
         }
@@ -327,7 +350,7 @@ public class MapTest {
         boolean thrown = false;
         map.setMapSize(7,30);
         try {
-            map.fillRemainingEmptyLocations();
+            new MapDirector(1).buildMap();
         } catch (LocationIsOutOfRange e) {
             thrown = true;
         }
@@ -367,7 +390,7 @@ public class MapTest {
         map.setMapSize(noOfPlayers,mapSize);
         try {
             map.generate();
-            map.fillRemainingEmptyLocations();
+            new MapDirector(1).buildMap();
         } catch (MapSizeNotSet | LocationIsOutOfRange e) {
             assumeNoException(e);
         }
@@ -454,7 +477,7 @@ public class MapTest {
     public void isIdealLocationNextIsOutOfRangeJCheckCurrentRemainsTheSameExceedingSize() {
         int noOfPlayers = 5; int mapSize = 25;
         map.setMapSize(noOfPlayers,mapSize);
-        createMap();
+        map.createEmptyMap();
         Position previous = new Position(23,23);
         Position current = new Position(23,24);
         Position next = new Position(23,25);
@@ -466,10 +489,10 @@ public class MapTest {
 
     @Test
     public void isIdealLocationNextSucessfulMoveCheckK() {
-        map.listOfLocationLeadingToTreasure = new ArrayList(1);
+        map.listOfLocationLeadingToTreasure = new ArrayList<>();
         int noOfPlayers = 5; int mapSize = 25;
         map.setMapSize(noOfPlayers,mapSize);
-        createMap();
+        map.createEmptyMap();
         Position previous = new Position(7,8);
         Position current = new Position(7,9);
         Position next = new Position(7,10);
@@ -481,10 +504,10 @@ public class MapTest {
 
     @Test
     public void isIdealLocationNextSucessfulMoveCheckCurrent() {
-        map.listOfLocationLeadingToTreasure = new ArrayList(1);
+        map.listOfLocationLeadingToTreasure = new ArrayList<>();
         int noOfPlayers = 5; int mapSize = 25;
         map.setMapSize(noOfPlayers,mapSize);
-        createMap();
+        map.createEmptyMap();
         Position previous = new Position(7,8);
         Position current = new Position(7,9);
         Position next = new Position(7,10);
@@ -496,10 +519,10 @@ public class MapTest {
 
     @Test
     public void isIdealLocationNextSucessfulMoveCheckNext() {
-        map.listOfLocationLeadingToTreasure = new ArrayList(1);
+        map.listOfLocationLeadingToTreasure = new ArrayList<>();
         int noOfPlayers = 5; int mapSize = 25;
         map.setMapSize(noOfPlayers,mapSize);
-        createMap();
+        map.createEmptyMap();
         Position previous = new Position(7,8);
         Position current = new Position(7,9);
         Position next = new Position(7,10);
@@ -509,6 +532,189 @@ public class MapTest {
         assertEquals(next,valuesAfterValidation.getCurrent());
     }
 
+    @Test
+    public void testHazardousMap() {
+        map.setMapSize(5,10);
+        map.createEmptyMap();
+
+        boolean success = false;
+
+        try {
+            success = new MapDirector(2).buildMap();
+        }
+        catch(LocationIsOutOfRange e) {
+            assumeNoException(e);
+        }
+
+        assertTrue(success);
+    }
+
+    @Test
+    public void testHazardousMapLocationOutOfRange() {
+        boolean thrown = false;
+        map.setMapSize(5,10);
+
+        try {
+            new HazardousMapBuilder();
+        }
+        catch(LocationIsOutOfRange e) {
+            thrown = true;
+        }
+
+        assertTrue(thrown);
+    }
+
+    @Test
+    public void testMapRestriction() {
+        boolean restrictionApplied;
+        map.setMapSize(5,8);
+        map.createEmptyMap();
+
+
+        try {
+            new HazardousMapBuilder();
+        }
+        catch(LocationIsOutOfRange e) {
+            assumeNoException(e);
+        }
+
+        map.listOfLocationLeadingToTreasure = new ArrayList<>(49);
+        for (int i = 0; i < 7; i++){
+            for (int j = 0; j < 7; j++){
+                map.listOfLocationLeadingToTreasure.add(new Position(i,j));
+            }
+        }
+
+        restrictionApplied = map.mapRestricttion();
+        assertTrue(restrictionApplied);
+    }
+
+    @Test
+    public void testMapRestrictionNotApplied() {
+        boolean restrictionApplied;
+        map.setMapSize(5,50);
+        map.createEmptyMap();
+        map.listOfLocationLeadingToTreasure = new ArrayList<>(200);
+        try {
+            new MapDirector(2).buildMap();
+        }
+        catch(LocationIsOutOfRange e) {
+            assumeNoException(e);
+        }
+        restrictionApplied = map.mapRestricttion();
+        assertFalse(restrictionApplied);
+    }
+
+    @Test
+    public void fillBlueTilesExplicitly() {
+        int noOfBlueTiles = 15;
+        int minBlueTiles = 30;
+        int maxNofOfBlueTiles = 40;
+        int result = 0;
+        ArrayList<Position> greenTiles = new ArrayList<>(100);
+        map.setMapSize(5,50);
+        map.createEmptyMap();
+
+        greenTiles = new ArrayList<>(49);
+        for (int i = 0; i < 7; i++){
+            for (int j = 0; j < 7; j++){
+                greenTiles.add(new Position(i,j));
+            }
+        }
+        try {
+            new MapDirector(2).buildMap();
+            HazardousMapBuilder instance = new HazardousMapBuilder();
+            result = instance.blueTilesReachQuota(noOfBlueTiles, minBlueTiles,maxNofOfBlueTiles, greenTiles );
+        }
+        catch(LocationIsOutOfRange e) {
+            assumeNoException(e);
+        }
+        assertEquals(result, 30);
+    }
+
+    @Test
+    public void fillBlueTilesExplicitlyIncorrectMaxMinValues() {
+        int noOfBlueTiles = 15;
+        int minBlueTiles = 30;
+        int maxNofOfBlueTiles = 10;
+        boolean result = true ;
+        ArrayList<Position> greenTiles = new ArrayList<>(100);
+        map.setMapSize(5,50);
+        map.createEmptyMap();
+
+        greenTiles = new ArrayList<>(49);
+        for (int i = 0; i < 7; i++){
+            for (int j = 0; j < 7; j++){
+                greenTiles.add(new Position(i,j));
+            }
+        }
+        try {
+            new MapDirector(2).buildMap();
+            HazardousMapBuilder instance = new HazardousMapBuilder();
+            instance.blueTilesReachQuota(noOfBlueTiles, minBlueTiles,maxNofOfBlueTiles, greenTiles );
+            result = instance.getSuccess();
+
+        }
+        catch(LocationIsOutOfRange e) {
+            assumeNoException(e);
+        }
+        assertFalse(result);
+    }
+
+    @Test
+    public void testSafeMap() {
+        map.setMapSize(5,10);
+        map.createEmptyMap();
+
+        boolean success = false;
+
+        try {
+            success = new MapDirector(1).buildMap();
+        }
+        catch(LocationIsOutOfRange e) {
+            assumeNoException(e);
+        }
+
+        assertTrue(success);
+    }
+
+    @Test
+    public void testSafeMapGetSuccessMethodCorrectNoOfBlueTiles() {
+        boolean result = false;
+        int noOfBlueTiles = 5;
+        map.setMapSize(5,10);
+        map.createEmptyMap();
+
+        try {
+            SafeMapBuilder instance = new SafeMapBuilder();
+            instance.setNoOfBlueTiles(noOfBlueTiles);
+            result = instance.getSuccess();
+
+        }catch (LocationIsOutOfRange e){
+            assumeNoException(e);
+        }
+
+        assertTrue(result);
+    }
+
+    @Test
+    public void testSafeMapGetSuccessMethodIncorrectNoOfBlueTiles() {
+        boolean result = false;
+        int noOfBlueTiles = 15;
+        map.setMapSize(4,8);
+        map.createEmptyMap();
+
+        try {
+            SafeMapBuilder instance = new SafeMapBuilder();
+            instance.setNoOfBlueTiles(noOfBlueTiles);
+            result = instance.getSuccess();
+
+        }catch (LocationIsOutOfRange e){
+            assumeNoException(e);
+        }
+
+        assertFalse(result);
+    }
 
 
 
