@@ -19,19 +19,19 @@ class Player {
         Position toMove;
         //If tile exists in map, mark as visited and attempt to set position
         try {
-            if (direction == 'U' && Game.map.getMapSize() != position.getY() + 1) {
+            if (direction == 'U') {
                 toMove = new Position(position.getX(), position.getY() + 1);
                 return setPosition(toMove);
             }
-            else if (direction == 'D' && position.getY() != 0) {
+            else if (direction == 'D') {
                 toMove = new Position(position.getX(), position.getY() - 1);
                 return setPosition(toMove);
             }
-            else if (direction == 'L' && position.getX() != 0) {
+            else if (direction == 'L') {
                 toMove = new Position(position.getX() - 1, position.getY());
                 return setPosition(toMove);
             }
-            else if (direction == 'R' && Game.map.getMapSize() != position.getX() + 1) {
+            else if (direction == 'R') {
                 toMove = new Position(position.getX() + 1, position.getY());
                 return setPosition(toMove);
             }
@@ -57,11 +57,9 @@ class Player {
                 position.setCoordinates(p.getX(), p.getY());
             else
                 position.setCoordinates(start.getX(), start.getY());
-
-            return true;
         }
 
-        return false;
+        return true;
     }
 
     //Sets starting point for player
