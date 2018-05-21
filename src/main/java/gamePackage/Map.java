@@ -8,15 +8,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Map {
+    private static Map mapInstance = null;
     private int size;
+    private static int type = 0;
+
     char[][] map;
     Position treasureLocation;
-    List<Position> listOfLocationLeadingToTreasure = new ArrayList<Position>();
+    ArrayList<Position> listOfLocationLeadingToTreasure = new ArrayList<>();
 
-    Map() {
+    private Map() {
         this.treasureLocation = new Position();
         this.size = 0;
         this.map = null;
+    }
+
+    static Map getMapInstance(){
+        if(mapInstance == null)
+            mapInstance = new Map();
+
+        return mapInstance;
+    }
+
+    static void setMapType(int t) {
+        type = t;
+    }
+
+    static void tearDownMap(){
+        mapInstance = null;
     }
 
     boolean setMapSize(int noOfPlayers, int mapSize) {
@@ -32,7 +50,7 @@ class Map {
         return this.size;
     }
 
-    List<Position> generate() throws MapSizeNotSet, LocationIsOutOfRange {
+    ArrayList<Position> generate() throws MapSizeNotSet, LocationIsOutOfRange {
         //create sure paths
         Position previous = new Position();
         Position current;
@@ -52,19 +70,30 @@ class Map {
             pathSize = (int) (Math.random() * getMapSize());
             current = treasureLocation;
             for (int j = 0; j < pathSize; j++) {
-                possibleLocations[0] = new Position(current.getX() - 1, current.getY());
-                possibleLocations[1] = new Position(current.getX() + 1, current.getY());
-                possibleLocations[2] = new Position(current.getX(), current.getY() - 1);
-                possibleLocations[3] = new Position(current.getX(), current.getY() + 1);
 
-                next = possibleLocations[(int) Math.floor(Math.random() * 4)];
-                returnLocationCheck valuesAfterValidation = checkIfNextLocationIsIdeal(j,next,previous,current);
-                j = valuesAfterValidation.getJ();
-                current = valuesAfterValidation.getCurrent();
-                previous = valuesAfterValidation.getPrevious();
+                if (!mapRestricttion()) {
+                    possibleLocations[0] = new Position(current.getX() - 1, current.getY());
+                    possibleLocations[1] = new Position(current.getX() + 1, current.getY());
+                    possibleLocations[2] = new Position(current.getX(), current.getY() - 1);
+                    possibleLocations[3] = new Position(current.getX(), current.getY() + 1);
+
+                    next = possibleLocations[(int) Math.floor(Math.random() * 4)];
+                    returnLocationCheck valuesAfterValidation = checkIfNextLocationIsIdeal(j, next, previous, current);
+                    j = valuesAfterValidation.getJ();
+                    current = valuesAfterValidation.getCurrent();
+                    previous = valuesAfterValidation.getPrevious();
+                }
             }
         }
         return listOfLocationLeadingToTreasure;
+    }
+
+
+    boolean mapRestricttion (){
+        if (type == 2 && listOfLocationLeadingToTreasure.size() >= 0.64 * getMapSize() * getMapSize())
+            return true;
+        else
+            return false;
     }
 
     returnLocationCheck checkIfNextLocationIsIdeal (int j, Position next, Position previous, Position current){
@@ -82,20 +111,6 @@ class Map {
             return new returnLocationCheck(j, current,previous);
         }
         return new returnLocationCheck(j,next, current);
-    }
-
-    void fillRemainingEmptyLocations() throws LocationIsOutOfRange {
-        char[] tileTypes = {'G', 'B'};
-        for (int i = 0; i < getMapSize(); i++) {
-            for (int j = 0; j < getMapSize(); j++) {
-                try {
-                    if (getTileType(i, j) != 'T' && getTileType(i, j) != 'G')
-                        setTileType(i, j, tileTypes[(int) (Math.random() * 2)]);
-                } catch (LocationIsOutOfRange e) {
-                    throw e;
-                }
-            }
-        }
     }
 
     void generateTreasureLocation() throws MapSizeNotSet, LocationIsOutOfRange {
