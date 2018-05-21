@@ -3,12 +3,11 @@ package gamePackage;
 import Exceptions.LocationIsOutOfRange;
 
 import java.util.ArrayList;
-import java.util.List;
 
 class Player {
     private Position position, start;
 
-    private List<Position> visited = new ArrayList<>();
+    private ArrayList<Position> visited = new ArrayList<>();
 
     Player() {
         position = new Position(0 ,0);
@@ -46,8 +45,8 @@ class Player {
 
     //Places Player at desired position p if valid move
     boolean setPosition(Position p) throws LocationIsOutOfRange {
-        int n = Game.map.getMapSize();
-        char tile = Game.map.getTileType(p.getX(), p.getY());
+        int n = Game.getMap().getMapSize();
+        char tile = Game.getMap().getTileType(p.getX(), p.getY());
 
         //If within bounds
         if (p.getX() < n && p.getY() < n) {
@@ -70,8 +69,13 @@ class Player {
     }
 
     //Returns visited list
-    List<Position> getVisited() {
+    ArrayList<Position> getVisited() {
         return visited;
+    }
+
+    //Adds x to visited
+    void addVisited(Position x) {
+        visited.add(x);
     }
 
     //Returns current position
